@@ -23,6 +23,10 @@
       background: red;
       color: white;
     }
+  #left{
+    position:absolute;
+    top:0;
+  }
   </style>
   <script>
   
@@ -51,11 +55,17 @@ startTime();
 <body onload="startTime()">
   <p>Hello, Yaidra! :)</p>
   <p id="txt"></p>
+<div id="left">
 <a class="weatherwidget-io" href="https://forecast7.com/en/37d77n122d42/san-francisco/?unit=us" data-label_1="SAN FRANCISCO" data-label_2="WEATHER" data-font="Consolas" data-icons="Climacons" data-theme="weather_one" >SAN FRANCISCO WEATHER</a>
+
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://weatherwidget.io/js/widget.min.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","weatherwidget-io-js");
 </script>
+</div>
+
 <div class="feedgrabbr_widget" id="fgid_9664f08b821b955734506844c"></div>
-<script>if (typeof (fg_widgets) === "undefined") fg_widgets = new Array(); fg_widgets.push("fgid_9664f08b821b955734506844c");</script>
+<script>
+
+if (typeof (fg_widgets) === "undefined") fg_widgets = new Array(); fg_widgets.push("fgid_9664f08b821b955734506844c");</script>
 <script async src="https://www.feedgrabbr.com/widget/fgwidget.js"></script>
 </body>
